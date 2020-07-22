@@ -1,13 +1,15 @@
-print("HelloWorld")
-def isPalindrome(x: int) -> bool: #回文数判断
-        original_num=x
-        reversed_num = 0
-        while x > 0:
-            reversed_num = reversed_num * 10 + x % 10
-            x //= 10
-        if (reversed_num==original_num):
-            return True
-        else:
-            return False
+import os
+import time
 
-print(isPalindrome(121))
+def main():
+    content = '北京欢迎你为你开天辟地…………'
+    while True:
+        # 清理屏幕上的输出
+        os.system('cls')  # os.system('clear')
+        print(content)
+        # 休眠200毫秒
+        time.sleep(0.2)
+        content = content[1:] + content[0]
+
+if __name__ == '__main__':
+    main()
