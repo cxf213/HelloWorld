@@ -16,7 +16,7 @@ int main(){
 	}
 	
 	printf("%s\n",str);
-	for(char a:str){
-		putchar(a);
-	}
+	//for(char a:str){
+	//	putchar(a);
+	//}
 }
